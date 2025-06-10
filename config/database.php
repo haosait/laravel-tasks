@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
+            'url' => env('DATABASE_URL', 'Database=apphao-database;Server=apphao-server.mysql.database.azure.com;User Id=vkqlpjtnsv;Password=eS4m7lbXKjJbpd$W'),
             'host' => env('DB_HOST', 'AZURE_MYSQL_HOST'),
             'port' => env('DB_PORT', 'AZURE_MYSQL_PORT'),
             'database' => env('DB_DATABASE', 'AZURE_MYSQL_DBNAME'),
