@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL', 'Database=apphao-database;Server=apphao-server.mysql.database.azure.com;User Id=vkqlpjtnsv;Password=eS4m7lbXKjJbpd$W'),
-            'host' => env('DB_HOST'),
-            'port' => env('DB_PORT'),
-            'database' => env('DB_DATABASE'),
-            'username' => env('DB_USERNAME'),
-            'password' => env('DB_PASSWORD'),
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', 'AZURE_MYSQL_HOST'),
+            'port' => env('DB_PORT', 'AZURE_MYSQL_PORT'),
+            'database' => env('DB_DATABASE', 'AZURE_MYSQL_DBNAME'),
+            'username' => env('DB_USERNAME', 'AZURE_MYSQL_USERNAME'),
+            'password' => env('DB_PASSWORD', 'AZURE_MYSQL_PASSWORD'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
